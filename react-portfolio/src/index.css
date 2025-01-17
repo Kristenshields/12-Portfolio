@@ -66,3 +66,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  background-color: #74245d;
+}
+
+.nav-link {
+  color: #110d0d !important;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+header {
+  
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #74245d;
+}
+
+footer {
+  padding: 1em 2em;
+  background-color: #74245d;
+}

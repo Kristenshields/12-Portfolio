@@ -3,18 +3,21 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer>
-      <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
-        <FaGithub />
-      </a>
-      <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin />
-      </a>
-      <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-        <FaTwitter />
-      </a>
+    <footer className="bg-light py-3">
+      <div className="container text-center">
+        <a href="https://github.com/your-profile" className="mx-2">
+          <FaGithub size={24} />
+        </a>
+        <a href="https://linkedin.com/in/your-profile" className="mx-2">
+          <FaLinkedin size={24} />
+        </a>
+        <a href="https://twitter.com/your-profile" className="mx-2">
+          <FaTwitter size={24} />
+        </a>
+      </div>
     </footer>
   );
 };
 
 export default Footer;
+

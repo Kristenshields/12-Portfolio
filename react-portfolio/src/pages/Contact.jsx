@@ -2,63 +2,81 @@ import React, { useState } from 'react';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [errors, setErrors] = useState({ name: '', email: '', message: '' });
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
 
-  const validate = () => {
-    let isValid = true;
-    const newErrors = { name: '', email: '', message: '' };
-
-    if (!form.name) newErrors.name = 'Name is required.', (isValid = false);
-    if (!form.email) newErrors.email = 'Email is required.', (isValid = false);
-    else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(form.email))
-      newErrors.email = 'Invalid email address.', (isValid = false);
-    if (!form.message) newErrors.message = 'Message is required.', (isValid = false);
-
-    setErrors(newErrors);
-    return isValid;
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) console.log('Form submitted:', form);
+    const newErrors = {};
+    if (!form.name) newErrors.name = 'Name is required.';
+    if (!form.email) newErrors.email = 'Email is required.';
+    if (!form.message) newErrors.message = 'Message is required.';
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      console.log('Form submitted:', form);
+    }
   };
 
   return (
-    <section>
+    <section className="container my-5">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={form.name}
-          onChange={handleChange}
-        />
-        {errors.name && <small>{errors.name}</small>}
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-        />
-        {errors.email && <small>{errors.email}</small>}
-        <textarea
-          name="message"
-          placeholder="Message"
-          value={form.message}
-          onChange={handleChange}
-        />
-        {errors.message && <small>{errors.message}</small>}
-        <button type="submit">Submit</button>
+      <form onSubmit={handleSubmit} className="row g-3">
+        <div className="col-md-6">
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className={`form-control ${errors.name && 'is-invalid'}`}
+            value={form.name}
+            onChange={handleChange}
+          />
+          <div className="invalid-feedback">{errors.name}</div>
+        </div>
+        <div className="col-md-6">
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className={`form-control ${errors.email && 'is-invalid'}`}
+            value={form.email}
+            onChange={handleChange}
+          />
+          <div className="invalid-feedback">{errors.email}</div>
+        </div>
+        <div className="col-12">
+          <label htmlFor="message" className="form-label">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className={`form-control ${errors.message && 'is-invalid'}`}
+            rows="5"
+            value={form.message}
+            onChange={handleChange}
+          ></textarea>
+          <div className="invalid-feedback">{errors.message}</div>
+        </div>
+        <div className="col-12">
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
+        </div>
       </form>
     </section>
   );
 };
 
 export default Contact;
+

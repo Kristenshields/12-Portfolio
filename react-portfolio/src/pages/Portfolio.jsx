@@ -11,18 +11,34 @@ const Portfolio = () => {
   ];
 
   return (
-    <section>
-      <h2>My Projects</h2>
-      <div className="portfolio-grid">
+    <section className="container my-5">
+      <h2 className="text-center mb-4">Portfolio</h2>
+      <div className="row g-4">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <h3>{project.title}</h3>
-            <a href={project.live} target="_blank" rel="noopener noreferrer">
-              Live Demo
-            </a>
-            <a href={project.repo} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
+          <div key={index} className="col-md-4">
+            <div className="card h-100">
+              <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <div className="d-flex justify-content-between">
+                  <a
+                    href={project.live}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                  <a
+                    href={project.repo}
+                    className="btn btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -31,3 +47,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
