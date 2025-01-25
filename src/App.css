@@ -1,16 +1,16 @@
 
 /* Global Colors */
 :root {
-    --primary: #0D47A1;
-    --secondary: #1976D2;
-    --accent-1: #BBDEFB;
-    --accent-2: #FF6F61;
-    --accent-3: #FFD54F;
-    --background: #FAFAFA;
-    --surface: #FFFFFF;
-    --text-primary: #212121;
-    --text-secondary: #757575;
-    --border: #E0E0E0;
+    --primary: #590d22;
+    --secondary: #800f2f;
+    --accent-1: #a4133c;
+    --accent-2: #c9184a;
+    --accent-3: #ff4d6d;
+    --background: #ff758f;
+    --surface: #ff8fa3;
+    --text-primary: #ffb3c1;
+    --text-secondary: #ffccd5;
+    --border: #fff0f3;
   }
   
   /* Body Styling */
@@ -110,3 +110,4 @@
   footer a:hover {
     color: var(--accent-2);
   }
+
