@@ -1,5 +1,4 @@
 #contact {
-    background-color: #fff0f3;
     padding: 3rem 2rem;
     max-width: 800px;
     margin: 2rem auto;
@@ -52,8 +51,6 @@
   }
   
   button {
-    background-color: #ffb3c1;
-    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -63,7 +60,7 @@
   }
   
   button:hover {
-    background-color: #800f2f; /* Darker blue on hover */
+    background-color: #d08c60; /* Darker blue on hover */
   }
   
   @media (min-width: 768px) {

@@ -1,5 +1,4 @@
 footer {
-    color: white;
     padding: 2rem 1rem;
     text-align: center;
     font-size: 1rem;
@@ -24,7 +23,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
     padding: 1rem;
     text-align: center;
     font-size: 1rem;

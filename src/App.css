@@ -1,16 +1,16 @@
 
 /* Global Colors */
 :root {
-    --primary: #590d22;
-    --secondary: #800f2f;
-    --accent-1: #a4133c;
-    --accent-2: #c9184a;
-    --accent-3: #ff4d6d;
-    --background: #ff758f;
-    --surface: #ff8fa3;
-    --text-primary: #ffb3c1;
-    --text-secondary: #ffccd5;
-    --border: #fff0f3;
+    --primary: #797d62;
+    --secondary: #9b9b7a;
+    --accent-1: #baa587;
+    --accent-2: #d9ae94;
+    --accent-3: #f1dca7;
+    --background: #ffcb69;
+    --surface: #e8ac65;
+    --text-primary: #d08c60;
+    --text-secondary: #b58463;
+    --border: #997b66;
   }
   
   /* Body Styling */

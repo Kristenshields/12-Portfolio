@@ -1,18 +1,21 @@
 import Project from "./Project";
 import '../styles/Portfolio.css';
+import projectOneImage from "../assets/projectOne.jpg";
+import projectTwoImage from "../assets/fantasyFighter.jpg";
+
 export default function Portfolio() {
   const projects = [
     {
-      title: "Project 1",
-      image: "/path-to-image1.jpg",
-      deployedLink: "https://deployed-link1.com",
-      repoLink: "https://github.com/repo1",
+      title: "Organizability",
+      image: projectOneImage,
+      deployedLink: "https://samvs-tech.github.io/Organizability/",
+      repoLink: "https://github.com/samvs-tech/Organizability",
     },
     {
       title: "Project 2",
-      image: "/path-to-image2.jpg",
-      deployedLink: "https://deployed-link2.com",
-      repoLink: "https://github.com/repo2",
+      image: projectTwoImage,
+      deployedLink: "https://project-2-c43n.onrender.com/",
+      repoLink: "https://github.com/MagicInUse/Fantasy-Fighter",
     },
     // Add more projects as needed
   ];

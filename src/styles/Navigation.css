@@ -5,14 +5,14 @@ nav {
   
   nav a {
     font-size: 1.2rem;
-    color: white;
+    
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
   }
   
   nav a:hover {
-    color: #ffccd5;  /* Highlight color on hover */
+    color: #d08c60;  /* Highlight color on hover */
   }
   
   nav .active {
