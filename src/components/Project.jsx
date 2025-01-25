@@ -1,3 +1,5 @@
+import '../styles/Project.css';
+
 export default function Project({ title, image, deployedLink, repoLink }) {
     return (
       <div className="project">

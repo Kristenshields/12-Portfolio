@@ -1,5 +1,5 @@
 import Project from "./Project";
-
+import '../styles/Portfolio.css';
 export default function Portfolio() {
   const projects = [
     {

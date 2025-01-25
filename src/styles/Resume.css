@@ -1,0 +1,85 @@
+#resume {
+    padding: 4rem 2rem;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  #resume h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  #resume a {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffb3c1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #resume a:hover {
+    background-color: #800f2f;
+  }
+  
+  #resume a:active {
+    background-color: #1abc9c;
+  }
+  
+  #resume h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 2rem;
+  }
+  
+  #resume ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+    display: inline-block;
+  }
+  
+  #resume ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+  
+  #resume ul li::before {
+    content: '•';
+    color: #800f2f;  /* Blue bullet point */
+    font-size: 1.6rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #resume {
+      padding: 5rem 3rem;
+    }
+  
+    #resume h2 {
+      font-size: 3rem;
+    }
+  
+    #resume h3 {
+      font-size: 2.2rem;
+    }
+  
+    #resume a {
+      font-size: 1.2rem;
+    }
+  
+    #resume ul li {
+      font-size: 1.3rem;
+    }
+  }

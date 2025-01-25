@@ -1,0 +1,62 @@
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin: 1rem 0;
+    font-weight: 600;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #ffb3c1;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project a:hover {
+    background-color: #800f2f;
+  }
+  
+  .project a:active {
+    background-color: #1abc9c;
+  }
+  
+  @media (min-width: 768px) {
+    .project {
+      width: 90%; /* Ensure the project card takes up a bit less space on larger screens */
+    }
+  
+    .project h3 {
+      font-size: 1.8rem;
+    }
+  
+    .project a {
+      font-size: 1.1rem;
+    }
+  }
