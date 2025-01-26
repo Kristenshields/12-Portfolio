@@ -19,7 +19,7 @@ The React Portfolio project showcases my web development skills, focusing on cre
   Enables smooth navigation between sections like **About Me**, **Projects**, **Contact**, and **Resume**, providing a single-page application experience.
 
 - **🚀 Deployment on Netlify**  
-  The portfolio is deployed using [Netlify](https://www.netlify.com/), ensuring fast performance and easy access for users.
+  This portfolio is deployed using [Netlify](https://kls-react-portfolio.netlify.app/).
 
 
 ## 🚀 Technologies Used
