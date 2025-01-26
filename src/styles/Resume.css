@@ -1,6 +1,5 @@
 #resume {
     padding: 4rem 2rem;
-    background-color: #f0f0f0;
     text-align: center;
   }
   
@@ -15,7 +14,7 @@
     display: inline-block;
     margin: 1rem 0;
     padding: 0.5rem 1.5rem;
-    background-color: #ffb3c1;
+    background-color: #997b66;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -24,7 +23,7 @@
   }
   
   #resume a:hover {
-    background-color: #800f2f;
+    background-color: #d08c60;
   }
   
   #resume a:active {
@@ -55,7 +54,7 @@
   
   #resume ul li::before {
     content: '•';
-    color: #800f2f;  /* Blue bullet point */
+    color: #797d62;
     font-size: 1.6rem;
     position: absolute;
     left: 0;

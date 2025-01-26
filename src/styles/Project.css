@@ -32,7 +32,7 @@
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     color: #fff;
-    background-color: #ffb3c1;
+    background-color: #997b66;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem;
@@ -40,7 +40,7 @@
   }
   
   .project a:hover {
-    background-color: #800f2f;
+    background-color: #797d62;
   }
   
   .project a:active {
